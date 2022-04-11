@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button text</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+       $(document).ready(function() {
+    $('#btn').click(function() {
+        $(this).html('change text…');
+    })
+});
+// $(document).ready(function(){
+// $("*").on("click",function(event){
+//     var cl=event.target.className;
+//     alert(cl);
+
+// })
+// });
+$(function () {
+            $("#btnAdd").click(function () {
+                var option = $("<option />");
+                option.html($("#txtText").val());
+                option.val($("#txtValue").val());
+                $("#ddlFruits").append(option);
+            });
+        });
+        $(document).ready(function(){ 
+  $('#button1').click(function(){ 
+    $("#myTable").find("tr:gt(0)").remove();
+  });
+});
+$(document).ready(function(){ 
+  $('#button2').click(function(){ 
+   $('#r1').remove(); 
+   $('#r2').remove();
+   
+
+   });
+});
+var count_Checked = function() {
+var n = $( "input:checked" ).length;
+$( "p" ).text( n + (n === 1 ? " is" : " are") + " checked." );
+};
+count_Checked();
+$("input[type=checkbox]" ).on( "click", count_Checked );
+//
+
+  $("button").click(function(){
+    $(".test").remove();
+  });
+
+
+
+  $("button").click(function(){
+    $("p").css({"background-color": "green","color":"white", "font-size": "25px","padding":"15px"});
+  });
+
+  $(document).ready(function(){
+  $("button").click(function(){
+    $("p").toggleClass("main");
+  });
+}); 
+</script>
+<style>
+.main {
+  font-size: 120%;
+  color: red;
+}
+</style>
+ 
+
+        </script>
+</head>
+<body>
+   
+    <button id="btn">Button Text</button> <br> <br>
+    <p>Click on the color and get the class name.</p>
+<button class = "red">Button</button>
+<input type="submit" class="blue" value="submit">
+<p class="yellow">My class is yellow</p> 
+<p class="green">My class is green</p> <br> <br>
+<select id = "ddlFruits"></select>
+<hr />
+Text: <input type="text" id = "txtText" />
+Value: <input type="text" id = "txtValue" />
+<input type="button" id = "btnAdd" value = "Add" /> <br> <br> <br>
+<hr/>
+<table border="1" id="myTable">
+    <tr>
+    <th>Year</th>
+    <th>Savings</th>
+    </tr>
+    <tr>
+    <td>2014</td>
+    <td>$10000</td>
+    </tr>
+    <tr>
+    <td>2015</td>
+    <td>$8000</td>
+    </tr>
+    <tr>
+    <td>2016</td>
+    <td>$9000</td>
+    </tr>
+    </table>
+    <p>
+    <input id="button1" type="button" value="Click to remove all rows except first one"/></p> <br> <br>
+    <hr>
+    <table id="mytable">
+        <tr>
+         <th>Firstname</th>
+         <th>Lastname</th>
+         </tr>
+         <tr id="r1">
+         <td>Rahul</td>
+         <td>Kumar</td>
+         </tr>
+         <tr id="r2">
+          <td>Mohd</td>
+          <td>Ehtisham</td>
+          </tr>
+          </table>
+          <p> <input id="button2" type="button" value="Click to remove Row." /></p> <Br><br>
+            <hr>
+            <form>
+                <input type="checkbox" name="color" value="Bike">Red
+                <input type="checkbox" name="color" value="Car">Green
+                <input type="checkbox" name="color" value="Car">Blue
+                <input type="checkbox" name="color" value="Car">Black
+                </form>
+                <p></p>
+                <div class="test" style="height:100px;width:300px;border:1px solid black;background-color:yellow;">
+
+                    This is some text in the div.
+                    <p>This is a paragraph in the div.</p>
+                    <p>This is another paragraph in the div.</p>
+                    
+                    </div>
+                    <br>
+                    
+                    <button>Remove div element</button>
+                    <hr>
+                    <p style="background-color:#ff0000">This is a paragraph.</p>
+                    <p style="background-color:#00ff00">This is a paragraph.</p>
+                    <p style="background-color:#0000ff">This is a paragraph.</p>
+                    <button>See background-color</button>
+                    <hr>
+                    <button>Add and remove toggle form</button>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+<p><b>Note:</b> Click the button more than once to see the toggle effect.</p>
+
+                   
+                    
+</body>
+</html>

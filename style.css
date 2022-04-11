@@ -1,0 +1,17 @@
+#board{
+
+    border: 1px solid black;
+    height: 400px;
+    width: 400px;
+}
+.spot{
+    height: 50px;
+    width: 50px;
+    float: left;
+}
+.black{
+    background-color: black;
+}
+.white{
+    background-color: white;
+}
