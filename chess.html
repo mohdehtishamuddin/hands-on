@@ -9,19 +9,32 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1> Chess Board</h1>
-    <div id="board"></div>
-    <div class="spot" style="clear: left;"></div>
-    <div class="spot" ></div>
-    <div class="spot" ></div>
-    <div class="spot" ></div>
-    <div class="spot" ></div>
-    <div class="spot" ></div>
-    <div class="spot" ></div>
-    <div class="spot" ></div>
-    <div class="spot" ></div>
-    <div class="black"></div>
-    <div class="white"></div>
+    <div id="chessboard">
+		<div id="player" class ="smoothmove"><span class="icon">♖</span></div>
+	</div>	
+
+	<div id="controlbox">
+		<h3>Commands</h3>
+		<ul>
+			<li>Display Legal Move</li>
+			<li id="king">King</li>
+			<li id="rook">Rook</li>
+			<li id="pawn">Pawn</li>
+		</ul>
+	</div>
+
+
+  <div id="instructionbox">
+    <h2>Div Chess! Oh yes.</h2>
+    <h3>Instructions:</h3>
+    <p>- Click anywhere to move the player</br>
+        - Click on the commands on the sidebar to display legal move</br>
+       - Mouseover legal move positions to highlight</p>
+    
+    
+    <p>This little demo was made to see if I could make a chessboard procedurally with divs & javascript, rather than assets, then I added the functionality for fun</p>
+    The legal moves assume the player is starting from the bottom.</p>
+  </div>
     <script src="chess.js"></script>
 </body>
 </html>
